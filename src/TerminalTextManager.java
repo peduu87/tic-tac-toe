@@ -8,7 +8,7 @@ public class TerminalTextManager {
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
-    public static final String ANSI_GRAY = "\u001b[30;1m";
+    public static final String ANSI_GRAY = "\u001B[37;2m";
 
     public void printLine(String str, char colorChar) {
         String color = switch (colorChar) {

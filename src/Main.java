@@ -7,6 +7,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         BoardManager boardManager = new BoardManager();
+        BoardPrinter boardPrinter = new BoardPrinter();
         TerminalTextManager textManager = new TerminalTextManager();
 
         textManager.printLine("Welcome to Peduu's\n", 'b');
@@ -21,6 +22,8 @@ public class Main {
         textManager.printLine("Press [ENTER] to start...", 'd');
         System.in.read();
 
+        char[][] gameBoard = boardManager.createEmptyBoard();
 
+        boardPrinter.printBoard(gameBoard);
     }
 }
